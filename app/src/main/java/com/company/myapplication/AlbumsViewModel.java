@@ -12,6 +12,8 @@ public class AlbumsViewModel extends AndroidViewModel {
 
     AlbumsRepository albumsRepository;
 
+    Album selectedAlbum;
+
     public AlbumsViewModel(@NonNull Application application) {
         super(application);
 
@@ -20,7 +22,10 @@ public class AlbumsViewModel extends AndroidViewModel {
 
 
     LiveData<List<Album>> albums() {
-
         return albumsRepository.albums();
+    }
+
+    public void setSelectedAlbum(Album album) {
+        selectedAlbum = album;
     }
 }

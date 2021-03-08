@@ -10,4 +10,9 @@
         android:name="com.company.myapplication.AlbumsFragment"
         android:label="fragment_albums"
         tools:layout="@layout/fragment_albums" />
+    <dialog
+        android:id="@+id/actionDialogFragment"
+        android:name="com.company.myapplication.ActionDialogFragment"
+        android:label="fragment_action_dialog"
+        tools:layout="@layout/fragment_action_dialog" />
 </navigation>
